@@ -1,6 +1,9 @@
-
 //By: Zahid
 //instagram: mochskiz
+//relay in 1 pin : gpio 26
+//relay in 2 pin : gpio 27
+//sda oled : gpio 21
+//scl oled : gpio 22
 
 #include <WiFi.h>
 #include <AsyncTCP.h>
@@ -19,7 +22,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 #define EEPROM_SIZE 32
 
-const char* ssid = "NAMA_WIFI_KAMU";
+const char* ssid = "NAMA_WIFI_KAMU"; //ganti dengan anama dan password wifi yang ingin di hubungkan
 const char* password = "PASSWORD_WIFI_KAMU";
 
 const int relayPins[2] = {26, 27};
